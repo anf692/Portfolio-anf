@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assane N. Fall – Développeur Fullstack & IA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════ NAVBAR -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+  <div class="nav-container">
+    <a class="logo" href="#">ASSANE<span class="c-green">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+      <i class="bi bi-list text-white" style="font-size:1.6rem;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+        <li class="nav-item"><a class="nav-lk" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-lk" href="#stack">Stack</a></li>
+        <li class="nav-item"><a class="nav-lk" href="#projects">Réalisations</a></li>
+        <li class="nav-item"><a class="nav-lk" href="#formations">Formations</a></li>
+        <li class="nav-item"><a class="btn-nav" href="#contact">Me contacter</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════ HERO -->
+<section id="hero">
+  <div class="hero-inner">
+
+    <!-- Gauche -->
+    <div class="hero-left fade-up">
+      <h1 class="hero-title">
+        Je transforme <span class="c-green">les</span> <span class="c-green">idées</span> en réalité<span class="c-green">.</span>
+      </h1>
+      <p class="hero-desc">
+        Développeur Fullstack &amp; Intégration IA basé au Sénégal, spécialisé dans la création d'applications web et mobiles modernes et intelligentes.<br>
+        <span class="hero-tech-line">React · Next.js · Flutter · Django · FastAPI · OpenAI · Gemini · LangChain · PostgreSQL · Docker · Git</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-g">Voir mes projets</a>
+        <a href="#" class="btn-w">Télécharger mon CV</a>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-nb stat-w">05<span class="c-green">+</span></div>
+          <div class="stat-lb">Projets Majeurs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-nb stat-w">02<span class="c-green">+</span></div>
+          <div class="stat-lb">Ans d'Expérience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-nb stat-w">100<span class="c-green">%</span></div>
+          <div class="stat-lb">Dévouement</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite – Photo -->
+    <div class="hero-right fade-up">
+      <div class="badge-nom mono fs-badge">Assane N. FALL</div>
+      <div class="hero-card">
+        <img src="./img/Assane.png" alt="Image-de-assane-ndong-fall">
+      </div>
+      <div class="badge-dispo">
+        <span class="bdot pulse"></span>
+        <span class="mono fs-badge">Disponible pour projets</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ À PROPOS -->
+<section id="about" class="s-white">
+  <div class="s-container">
+    <div class="row g-5 align-items-start fade-up">
+
+      <!-- Texte -->
+      <div class="col-lg-6">
+        <h2 class="s-title dark">À propos <span class="c-green">.</span></h2>
+        <p class="about-p mt-4">
+          Passionné par le développement web et mobile, je combine expertise technique et vision stratégique pour créer des solutions qui répondent aux vrais besoins utilisateurs. Formé à l'Institut Supérieur d'Enseignement Professionnel Amadou Trawaré (ISEP-AT) de Diamniadio en Analyse de Performance Digitale et actuellement en formation Développement Fullstack &amp; IA chez Simplon Sénégal, j'intègre les dernières technologies pour transformer des idées en produits concrets et performants.
+        </p>
+        <p class="about-p mt-3">
+          Ma force ? Une approche pragmatique qui allie qualité du code, expérience utilisateur fluide et livraison dans les délais. Je ne construis pas juste des applications, je crée des expériences numériques qui génèrent de la valeur.
+        </p>
+        <div class="mt-4">
+          <span class="btn-g" style="font-size:.9rem;padding:12px 22px;">Excellence technique · Impact métier · Livraison garantie</span>
+        </div>
+      </div>
+
+      <!-- Photos -->
+      <div class="col-lg-5 offset-lg-1">
+        <div class="about-photos">
+          <div class="about-main-photo">
+            <img src="./img/assane-2.jpg" alt="image-de-assane-ndong-fall">
+          </div>
+          <div class="about-second-photo">
+            <img src="./img/assane-2.jpg" alt="image-de-assane-ndong-fall">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ STACK -->
+<section id="stack" class="s-black">
+  <div class="s-container">
+
+    <div class="text-center mb-head fade-up">
+      <h2 class="s-title light">Technique d'empilement <span class="c-green">.</span></h2>
+      <p class="s-sub">Technologies et outils que j'utilise au quotidien</p>
+    </div>
+
+    <div class="row g-3 fade-up">
+      <div class="col-6 col-lg-3">
+        <div class="stack-card">
+          <div class="stack-head"><span class="sdot"></span> Frontend</div>
+          <ul class="stack-ul">
+            <li>React</li>
+            <li>Angular</li>
+            <li>Flutter</li>
+            <li>Tailwind CSS</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stack-card">
+          <div class="stack-head"><span class="sdot"></span> Backend</div>
+          <ul class="stack-ul">
+            <li>Django</li>
+            <li>FastAPI</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stack-card">
+          <div class="stack-head"><span class="sdot"></span> IA &amp; API</div>
+          <ul class="stack-ul">
+            <li>REST API</li>
+            <li>OpenAI API</li>
+            <li>Gemini API</li>
+            <li>Ollama</li>
+            <li>Hugging Face</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stack-card">
+          <div class="stack-head"><span class="sdot"></span> DevOps &amp; Outils</div>
+          <ul class="stack-ul">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Figma</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ RÉALISATIONS -->
+<section id="projects" class="s-white">
+  <div class="s-container">
+
+    <div class="text-center mb-head fade-up">
+      <h2 class="s-title dark">Réalisations <span class="c-green">.</span></h2>
+      <p class="s-sub">Projets récents qui illustrent mon expertise technique</p>
+    </div>
+
+    <div class="row g-4 fade-up">
+
+      <!-- Projet 1 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/sta.png" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Système de traçabilité d'activités</div>
+            <div class="pcard-desc">Système intelligent de traçabilité avec Django et chatbot basé sur Ollama. Solution combinant gestion de données et IA pour analyser et assister les utilisateurs en temps réel.</div>
+            <div class="pcard-tags">
+              <span class="tag">Django</span><span class="tag">Python</span><span class="tag">Ollama</span>
+            </div>
+            <div class="pcard-links">
+              <a href="https://drive.google.com/file/d/1oSndXXTxsifU_KfjnoyddggLa70sSb4v/view?usp=sharing" target="_blank" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              <a href="https://github.com/anf692/STA.git" target="_blank" class="plink"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/mockup-portfolio-assane.jpg" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Mon Portfolio Flutter</div>
+            <div class="pcard-desc">Intégration de mon portfolio avec Flutter pour une expérience mobile fluide et moderne. Application performante présentant mes projets de manière dynamique et interactive.</div>
+            <div class="pcard-tags">
+              <span class="tag">Flutter</span><span class="tag">Dart</span>
+            </div>
+            <div class="pcard-links">
+              <a href="https://drive.google.com/file/d/17cHt1N0uOIbtPNrCFY7vimLLoUhWLGW9/view?usp=sharing" target="_blank" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              <a href="https://github.com/anf692/Portfolio-Flutter.git" target="_blank" class="plink"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/resultat analyse.JPG" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Projet Machine Learning &amp; Django</div>
+            <div class="pcard-desc">Création d'un modèle ML, entraînement et intégration dans un projet Django pour l'analyse de données et la visualisation des résultats.</div>
+            <div class="pcard-tags">
+              <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Machine Learning</span>
+            </div>
+            <div class="pcard-links">
+              <a href="#" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              <a href="https://github.com/anf692/Machine_Learnig.git" target="_blank" class="plink"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/wave.JPG" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Maquette Wave</div>
+            <div class="pcard-desc">Maquette Figma de l'application Wave repensée pour une UX plus fluide et moderne. Design intuitif, épuré et centré sur les besoins des utilisateurs mobiles.</div>
+            <div class="pcard-tags">
+              <span class="tag">Figma</span>
+            </div>
+            <div class="pcard-links">
+              <a href="#" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 5 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/travel.png" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Travel</div>
+            <div class="pcard-desc">Plateforme moderne permettant de découvrir, planifier et réserver des destinations à travers le monde, avec une expérience utilisateur fluide et immersive.</div>
+            <div class="pcard-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+            <div class="pcard-links">
+              <a href="#" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              <a href="https://github.com/anf692/Atelier5-Assane-Ndong-Fall.git" target="_blank" class="plink"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 6 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="pcard w-100">
+          <div class="pcard-img">
+            <img src="./img/flutter.jpg" alt="">
+            <div class="pcard-gradient"></div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title">Sen Resto</div>
+            <div class="pcard-desc">Application mobile de commande de plats en ligne, offrant une navigation intuitive et une expérience d'achat fluide.</div>
+            <div class="pcard-tags">
+              <span class="tag">Flutter</span><span class="tag">Dart</span>
+            </div>
+            <div class="pcard-links">
+              <a href="#" class="plink"><i class="bi bi-box-arrow-up-right"></i> Démo</a>
+              <a href="https://github.com/anf692/Sen-Resto.git" target="_blank" class="plink"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ FORMATIONS -->
+<section id="formations" class="s-black">
+  <div class="s-narrow">
+
+    <div class="text-center mb-head fade-up">
+      <h2 class="s-title light">Formations et certifications <span class="c-green">.</span></h2>
+      <p class="s-sub">Apprentissage continu et développement professionnel</p>
+    </div>
+
+    <div class="form-wrapper">
+
+      <!-- Éducation -->
+      <div class="fade-up">
+        <div class="form-label-section c-green">Éducation</div>
+        <div class="tl-item">
+          <div class="tl-dot-col">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">En cours · 2025-2026</div>
+            <div class="tl-title">CPS en Développement web / web mobile &amp; IA</div>
+            <div class="tl-org">Simplon Sénégal</div>
+            <div class="tl-desc">Formation intensive en développement web, mobile et intégration d'IA. Stack moderne : React, Next.js, Flutter, Django, FastAPI, APIs IA (OpenAI, Gemini), DevOps.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot-col">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-date">2024-2025</div>
+            <div class="tl-title">Technicien Supérieur en Analyse de Performance Digitale</div>
+            <div class="tl-org">ISEP-AT (Institut Supérieur d'Enseignement Professionnel Amadou Trawaré)</div>
+            <div class="tl-desc">Analyse de données, développement web et mobile, stratégies digitales, intelligence artificielle et automatisation, community manager.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="fade-up mt-big">
+        <div class="form-label-section c-green">Certifications</div>
+        <div class="cert-stack">
+          <div class="cert-row">
+            <div class="cert-dot-col"><span class="sdot"></span></div>
+            <div class="cert-body">
+              <div class="cert-title">Marketing Digital</div>
+              <div class="cert-org">Force-N</div>
+              <div class="cert-meta">Certification · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ ILS M'ONT FAIT CONFIANCE -->
+<section id="clients" class="s-white">
+  <div class="s-container">
+    <div class="text-center mb-head fade-up">
+      <h2 class="s-title dark">Ils m'ont fait confiance <span class="c-green">.</span></h2>
+    </div>
+    <div class="clients-grid fade-up">
+      <div class="client-box">Logo 1</div>
+      <div class="client-box">Logo 2</div>
+      <div class="client-box">Logo 3</div>
+      <div class="client-box">Logo 4</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ CONTACT -->
+<section id="contact" class="s-black">
+  <div class="s-narrow">
+
+    <div class="text-center fade-up">
+      <h2 class="s-title light" style="font-size:clamp(2rem,5vw,2.8rem);">Travaillons ensemble <span class="c-green">.</span></h2>
+      <p class="s-sub mt-3">
+        Vous avez un projet en tête ? Une idée à concrétiser ? Je suis disponible pour discuter de vos besoins et vous proposer des solutions sur-mesure. Envoyez-moi un message et lançons ensemble votre prochain succès numérique.
+      </p>
+    </div>
+
+    <form id="contactForm" class="fade-up mt-5" style="display:flex;flex-direction:column;gap:20px;" novalidate>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-lbl">Nom complet</label>
+          <input type="text" class="form-inp" placeholder="Votre nom" required />
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-lbl">E-mail</label>
+          <input type="email" class="form-inp" placeholder="votre@email.com" required />
+        </div>
+      </div>
+      <div>
+        <label class="form-lbl">Message</label>
+        <textarea class="form-inp form-ta" placeholder="Parlez-moi de votre projet..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Envoyer le message</button>
+    </form>
+
+    <div class="socials fade-up">
+      <a href="mailto:fassane348@gmail.com" class="soc-lk"><i class="bi bi-envelope"></i> fassane348@gmail.com</a>
+      <a href="https://www.linkedin.com/in/assanendongfall" target="_blank" class="soc-lk"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/anf692" target="_blank" class="soc-lk"><i class="bi bi-github"></i> GitHub</a>
+      <a href="https://wa.me/221784667455" target="_blank" class="soc-lk"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#" class="logo">ASSANE<span class="c-green">.</span></a>
+    <p class="footer-copy">© 2026 ASSANE. Tous droits réservés. Développeur Fullstack &amp; Intégration IA.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/anf692" target="_blank" class="fsoc"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/assanendongfall" target="_blank" class="fsoc"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/221784667455" target="_blank" class="fsoc"><i class="bi bi-whatsapp"></i></a>
+      <a href="mailto:fassane348@gmail.com" class="fsoc"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
