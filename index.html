@@ -407,20 +407,21 @@
       </p>
     </div>
 
-    <form id="contactForm" class="fade-up mt-5" style="display:flex;flex-direction:column;gap:20px;" novalidate>
+    <form id="contactForm" class="fade-up mt-5" action="main.php" method="POST"
+          style="display:flex;flex-direction:column;gap:20px;">
       <div class="row g-3">
         <div class="col-12 col-md-6">
           <label class="form-lbl">Nom complet</label>
-          <input type="text" class="form-inp" placeholder="Votre nom" required />
+          <input type="text" name="name" class="form-inp" placeholder="Votre nom" required />
         </div>
         <div class="col-12 col-md-6">
           <label class="form-lbl">E-mail</label>
-          <input type="email" class="form-inp" placeholder="votre@email.com" required />
+          <input type="email" name="email" class="form-inp" placeholder="votre@email.com" required />
         </div>
       </div>
       <div>
         <label class="form-lbl">Message</label>
-        <textarea class="form-inp form-ta" placeholder="Parlez-moi de votre projet..."></textarea>
+        <textarea name="message" class="form-inp form-ta" placeholder="Parlez-moi de votre projet..."></textarea>
       </div>
       <button type="submit" class="btn-submit">Envoyer le message</button>
     </form>

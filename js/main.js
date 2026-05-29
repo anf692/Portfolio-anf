@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
 /* ── Fermer le menu mobile au clic sur un lien */
 document.querySelectorAll('#navMenu .nav-lk, #navMenu .btn-nav').forEach(link => {
   link.addEventListener('click', () => {
-    const navMenu = document.getElementById('navMenu');
+    const navMenu    = document.getElementById('navMenu');
     const bsCollapse = bootstrap.Collapse.getInstance(navMenu);
     if (bsCollapse) bsCollapse.hide();
   });
@@ -28,17 +28,4 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.10 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-/* ── Contact form */
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const btn = this.querySelector('.btn-submit');
-  btn.textContent = 'Message envoyé ✓';
-  btn.style.background = '#4ADE80';
-  setTimeout(() => {
-    btn.textContent = 'Envoyer le message';
-    btn.style.background = '';
-    this.reset();
-  }, 3000);
-});
 
