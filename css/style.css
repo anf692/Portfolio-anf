@@ -721,7 +721,7 @@ button { cursor: pointer; }
   .hero-stats   { gap: 20px; }
   .s-container  { padding: 80px 16px; }
   .s-narrow     { padding: 80px 16px; }
-  .s-title      { font-size: 2rem; }
+  .s-title      { font-size: 2rem; text-align: center;}
   .socials      { gap: 16px; }
   .footer-inner { justify-content: center; text-align: center; }
   .badge-nom    { display: none; }
@@ -809,38 +809,40 @@ button { cursor: pointer; }
 /* ══════════════════════════════════════════════════
    NAVBAR — RESPONSIVE MOBILE
 ══════════════════════════════════════════════════ */
+/* ── Menu mobile dropdown */
 @media (max-width: 991px) {
-  .nav-container { padding: 12px 20px; }
   #navMenu {
-    background: var(--g10c);
-    border-top: 1px solid var(--g20c);
-    border-radius: 0 0 14px 14px;
-    padding: 12px 20px 20px;
-    margin-top: 4px;
+    background: var(--blk);
+    border-top: 1px solid var(--g10c);
+    padding: 16px 20px 20px;
+    margin-top: 0;
+    width: 100%;
   }
-  .navbar-nav { gap: 4px !important; }
+
+  .navbar-nav {
+    gap: 8px !important;
+  }
+
   .nav-lk {
     display: block;
-    padding: 10px 0 !important;
-    font-size: 1rem;
-    border-bottom: 1px solid var(--g20c);
-    color: var(--wh) !important;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
-  .nav-lk::after { display: none; }
+
   .btn-nav {
     display: block;
-    width: 100%;
     text-align: center;
-    padding: 12px 24px;
     margin-top: 8px;
-    border-radius: 10px;
+    width: 100%;
   }
-  .nav-item:last-child .nav-lk { border-bottom: none; }
-  .navbar-toggler {
-    border: 1px solid var(--g20c);
-    border-radius: 8px;
-    padding: 6px 10px;
-    line-height: 1;
-  }
-  .navbar-toggler:focus { box-shadow: none; outline: none; }
+}
+
+/* ── S'assurer que le nav-container est en flex-wrap */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;        /* ← important */
+  width: 100%;
+  padding: 12px 20px;
 }
